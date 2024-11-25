@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .mainDiv{
+            position: relative;
+            width: 70vw;
+            height: 60vh;
+            margin: auto;
+            margin-top: 150px;
+            background-color: black;
+        }
+        .ball{
+            background-color: red;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            bottom: 5px;
+            left: 5px;
+            animation: myAnimateX 5s linear infinite alternate ,
+            myAnimateY 0.5s ease-out infinite alternate ;
+        }
+        @keyframes myAnimateX {
+            from{
+                left: 5px;
+            }
+            to{
+                left: 63vw;
+                background-color: aqua;
+            }
+        }
+        @keyframes myAnimateY {
+            from{
+                bottom: 5px;
+            }
+            to{
+                bottom: 47vh;
+                background-color: orange;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="mainDiv">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
